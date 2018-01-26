@@ -95,40 +95,14 @@ The Zero Dispersion Wavelength (ZDW) of DSF is 1552.6 at room temperature and sh
 For simplicity of narration, we denote the beam in shorter injecting wavelength signal and the conjugate beam in longer wavelength as idler.
 The pump and seed are filtered separately from a mode-locked laser by Programable Filter (PF1), and the center wavelength and bandwidth of pump (seed) are 1549.5 nm (1533 nm) and 0.7 nm (1.5 nm) respectively.
 After PF1, the filtered pump is further amplified by Erbium-doped Fiber Amplifier (EDFA) to meet the required power while the seed is delayed by a mechanical delay-line so as to keep overlapped with pump in DSF.
-The amplified pump and seed is combined at the PF2 and feed into DSF where twin beam generated via FWM.
+The amplified pump and seed is combined at the PF2 and feed into DSF where twin beams are generated via FWM.
 Besides, PF2 also filter out ASE from EDFA and compensate dispersion from previous fiber system, which helps to increase the gain of OPA.
-
-After amplification in DSF, twin beam is generated and separated by 15nm bandwidth Coarse Wavelength Division Multiplexer (CWDM), which has 90\% and 86\% transmission efficiency in signal (centered at 1531nm) and idler channel (centered at 1571nm)  respectively with DSF-SMF splicing loss at the output of DSF and SMF-SMF splicing loss between CWDM filters included.
-
+After amplification in DSF, twin beams are generated and separated by 15nm bandwidth Coarse Wavelength Division Multiplexer (CWDM), which has 90\% and 86\% transmission efficiency in signal (centered at 1531nm) and idler channel (centered at 1571nm)  respectively with DSF-SMF splicing loss at the output of DSF(4\%) and SMF-SMF splicing loss between CWDM filters(<1\%) included.
+%% transmission
 The separated twin beam is transmitted individually by single mode Fiber Coil FC1 and FC2, which has equal length so as to simplify the detection system.
-The SMF used has typical 0.2dB/km transmission loss and the length is set to 0, 2, 5, 8 and 13km, corresponding to distribution of entangled source by 0, 4, 10, 16, 26km respectively, so as to demonstrate the potential of twin beam in long haul quantum resource distribution.
-The signal and idler of twin are detected by a Balanced Detector (BD) directly. The BD used in our experiment is modified Thorlabs PDB450C, whos detectors are replaced by high quantum efficiency (98\% with coupling efficiency included) InGaAs Pin detectors from Laser Components.
+The SMF used has typical 0.2dB/km transmission loss and the length is set to 0, 2, 5, 8 and 13 km, corresponding to distribution of entangled source by 0, 4, 10, 16, 26 km respectively, so as to demonstrate the potential of twin beam in long haul quantum resource distribution.
+The signal and idler of twin are detected by a Balanced Detector (BD) directly. The BD used in our experiment is modified Thorlabs PDB450C, with detectors replaced by high quantum efficiency (96\% with coupling efficiency included) InGaAs Pin detectors from Laser Components.
 To balance the intensity difference between signal and idler field caused by stimulated Raman amplification, the idler field is attenuated slightly(1-2\%)\cite{guo12}.
-
-%%%%%% CLEO
-\section{CLEO}
-The experiment setup is shown in Fig. \ref{fig_setup}.
-The non-degenerate twin beams are generated from a pulse pumped fiber optical parametric amplifier (FOPA) utilizing four wave mixing effect between strong pump and week seed injection via \(\chi^{(3)} \) nonlinear interaction in 300 m DSF fiber.
-The zero dispersion wavelength of DSF is 1548.5 nm when cooled at 77 k by liquid nitrogen, which reduces additional raman noise in generated twin beams \cite{guo12}.
-The wavelengths of pump and injection signal  are 1549.5 nm and 1533 nm, at which the phase matching condition of FWM is satisfied in the DSF.
-The filtered pump after F1 is further amplified by an erbium-doped fiber amplifier (EDFA) to meet the required power.
-The seed is delayed by a mechanical delay-line so as to keep overlapped with pump in DSF.
-The injection and pump are combined by a dual channel filter F2 and launched into the DSF.
-At the output of DSF, the amplified signal and idler filed are separated from the residual pump by a coarse wavelength division multiplexers (CWDM).
-We then propagate the signal and idler beam through SMF1 and SMF2 and measure the remaining intensity difference by using the balanced detector (BD) equipped with high quantum efficiency (96.5\% with coupling efficiency included) InGaAs detectors.
-%%%%%%%%%%%%%%%%%%%%%%%%% transmission
-The SMF in this experiment has 0.2 dB/km transmission loss and the length for distribution of twin beams is set to 0, 4, 10, 16 and 26 km, so as to demonstrate the potential of twin beams in long haul quantum resource distribution.
-%The signal and idler of twin are detected directly by a balanced detector (BD) with high quantum efficiency (96.5\% with coupling efficiency included) InGaAs detectors.
-%To balance the intensity difference between signal and idler field caused by stimulated Raman amplification, the idler field is attenuated slightly(1-2\%)\cite{guo12}.
-
-%During FWM process, twin beam is generated by amplifying injected seed via \(\chi^{(3)} \) nonlinear interaction with strong pump.
-
-
-%The amplified pump and seed is combined at the F2 and feed into DSF where twin beams are generated.
-% Further more, PF2 can generate arbitrary dispersion on pump and injected signal, which helps optimize the mode match condition of FWM \cite{GuoOL16}.
-%The DSF used as gain media is soaked in liquid nitrogen, which improves the quality of generated twin beam \cite{guo12}.
-%For simplicity of narration, we denote the beam in shorter seed wavelength (1533 nm) as signal and the conjugate beam in longer wavelength (1566 nm) as idler.
-%After amplification in DSF, twin beams are generated and separated by 15 nm bandwidth coarse wavelength division multiplexers (CWDM).% shown in Fig. \ref{fig_setup}, which has 92\% and 88\% transmission efficiency in signal (centered at 1531nm) and idler channel (centered at 1571nm) respectively with DSF-SMF splicing loss (3.6\%)at the output of DSF and SMF-SMF splicing loss($<1\%$) between CWDM filters included.
 
 
 \section{Results}
