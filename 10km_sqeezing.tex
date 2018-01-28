@@ -70,15 +70,15 @@ We managed to lunch the twin beams into individual SMF.
 After propagating in SMF for 10km, the measured normalized noise power is still 2dB below shot noise limit defined by detected intensity. Comparing to theoretical prediction, the only limitation for further propagation is the fiber transmission loss, which can be improved with the help of low loss fiber. Thus, our twin beam source has great potential in quantum information and quantum cryptology.
 
 \section{Theory}
-
-Using the method mentioned in previous works\cite{guo12}[???], ideally the twin beams generated from a FOPA with power gain $G$ possess intensity difference squeezing \(R_0=\frac{\Delta{(I_s-I_i)}^2}{\Delta{I_s}^2+\Delta{I_i}^2}=\frac{1}{(2G-1)}\). 
-When transmission and detection loss exist in experiment system, $R$ diminishes as the total loss get larger. 
+Intensity difference squeezing of twin beam is defined as the ratio between intensity difference noise of twin beams and SNL at identical intensity on detectors.
+Using the method mentioned in previous works\cite{guo12}[???], ideally the twin beams generated from a FOPA with power gain $G$ possess intensity difference squeezing \(R_0=\frac{\Delta{(I_s-I_i)}^2}{\Delta{I_s}^2+\Delta{I_i}^2}=\frac{1}{(2G-1)}\).
+$I_s$ ($I_i$) is the intensity detected in signal (idler) channel. $\Delta{I_s}^2+\Delta{I_i}^2$ defines shot noise limit (SNL). When transmission and detection loss exist in experiment system, $R$ diminishes as the total loss get larger.
 After series of calculation, when the total quantum efficiency of signal beam is $\eta_s$, the maximal measurable intensity difference squeezing $R_{meas}$ is:
 \begin{equation}
 R_{meas}=R_0(1-\eta_s)+\eta_s
 \label{eq:loss}
 \end{equation}see supplementary material for more detailed derivation of influence induced squeezing drop.
-
+This relations defines the upper limit of quantum resource left after a certain amount of loss.
 
 
 
@@ -119,13 +119,14 @@ To balance the intensity difference between signal and idler field caused by sti
 
 \section{Results}
 
-We first measure the twin beam directly after the generation so as to evaluate the quality.
-Intensity difference squeezing of twin beam is evaluated by the ratio between intensity difference noise of twin beam and SNL at identical intensity on detectors of BD.
+We first measure the twin beam directly after the generation.
 Fig. \ref{fig2_OPA}(a) shows the measured intensity difference squeezing at different OPA gain with the insert showing the gain of OPA at different pump power.
 It can be seen that the maximum squeezing reached in our experiment is 5.8dB when the power gain of OPA is arond 30.
 The measured squeezing decrease slightly when the gain of OPA increase further, which is probably caused by raman effect who introduce additional noise to both signal and idler field.
 
-In fig. \ref{fig2_OPA}(b) shows the best noise reduction result read on the DAQ system when pump power is 1.4 mW and intensity of signal and idler field is both around 15 uW. Line(2) is the intensity difference noised with line(1) is recorded corresponding SNL with identical intensity. It's obvious to around 5.8 dB noise reduction from SNL. Even though, the best result cancels out Electronic Noise (EN) shown by line3, the influence over uncorrected squeezing is no more than a slight change.
+In fig. \ref{fig2_OPA}(b) shows the best noise reduction result read on the DAQ system when pump power is 1.4 mW and intensity of signal and idler field is both around 15 uW. Line(2) is the intensity difference noised with line(1) is recorded corresponding SNL with identical intensity. It's obvious to see around 5.8 dB noise reduction from SNL. Even though, the best result cancels out Electronic Noise (EN) shown by line3, the influence over uncorrected squeezing is no more than a slight change. According to eq.\ref{eq:loss}, the normalized intensity noise generated from OPA is more than 8.5 dB after efficiency correction%
+%(90\% for signal field and 85 for idler field). the QE of Detector is around 96%	
+(86\% for signal field and 81 for idler field).	
 
 \begin{figure}[htbp]
 \centering
@@ -133,16 +134,6 @@ In fig. \ref{fig2_OPA}(b) shows the best noise reduction result read on the DAQ 
 \caption{Performance of intensity difference squeezing. (a) Gain curve. (b) Maximum intensity difference squeezing measured. (c) SQZ vs Power gain}
 \label{fig2_OPA}
 \end{figure}
-
-According to previous works [???], for twin beam possess $R_0$ initial intensity difference squeezing, the measurable intensity difference squeezing $ R(\eta)$ after detecting with quantum efficiency $\eta$ can be simplified as:
-\begin{equation}
-R(\eta) = 1+\eta(R_0-1)
-\label{eq:loss}
-\end{equation}
-
-This relations defines the upper limit of quantum resource left after a certain amount of loss. According to this relation, the normalized intensity noise generated from OPA is more than 7dB after efficiency correction(90\% for signal field and 85 for idler field).	
-
-
 
 Based on this equation, we calculated the normalized intensity noise at different transmission loss after CWDMs and plotted by blue line in fig. \ref{fig_loss}. The top axis is the signal field detection efficiency, and the bottom axis is the length of SMF that cause same amount of transmission loss. As shown in the figure, intensity squeezing can endure a pretty long SMF transmission and keep more than 2dB squeezing after distributing the twin beam by 26km, which means 13km SMF on signal and idler channel respectively.
 
@@ -165,38 +156,15 @@ The generated twin beam is distributed by 26 km and still remains 2 db squeezing
 
 
 \section{Funding Information}
-Thanks for collaborators helping me with instrument coordination and Wei Zhang, Zhiqun Yang providing useful discussion and one of the Waveshaper. Thanks my wife for tolerating my endless typing in the mid night.
-
-This work is supported by the XXXX.
 
 
 \section{References}
 
-Note that \emph{Optics Letters} uses an abbreviated reference style. Citations to journal articles should omit the article title and final page number; this abbreviated reference style is produced automatically when the \emph{Optics Letters} journal option is selected in the template, if you are using a .bib file for your references.
-
-However, full references (to aid the editor and reviewers) must be included as well on a fifth informational page that will not count against page length; again this will be produced automatically if you are using a .bib file.
-
-\bigskip
-\noindent Add citations manually or use BibTeX. See \cite{Zhang:14,OSA,FORSTER2007,testthesis,guo12}.
-
 % Bibliography
 \bibliography{10km_sqeezing}
-
-% Full bibliography added automatically for Optics Letters submissions; the following line will simply be ignored if submitting to other journals.
-% Note that this extra page will not count against page length
 \bibliographyfullrefs{10km_sqeezing}
-
-%Manual citation list
-%\begin{thebibliography}{1}
-%\bibitem{Zhang:14}
-%Y.~Zhang, S.~Qiao, L.~Sun, Q.~W. Shi, W.~Huang, %L.~Li, and Z.~Yang,
- % \enquote{Photoinduced active terahertz metamaterials with nanostructured
-  %vanadium dioxide film deposited by sol-gel method,} Opt. Express \textbf{22},
-  %11070--11078 (2014).
-%\end{thebibliography}
-
-% Please include bios and photos of all authors for aop articles
 \ifthenelse{\equal{\journalref}{aop}}{%
+
 \section*{Author Biographies}
 \begingroup
 \setlength\intextsep{0pt}
