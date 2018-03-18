@@ -77,8 +77,8 @@ Intensity difference squeezing of twin beam is defined as the ratio between inte
 According to four wave mixing theory in fiber\cite{guo13}[???], FOPA can be depicted by Bogoliubov transformation:
 \begin{equation}
 \begin{array}{c}
-\hat b_s = G{\hat a_s} + g\hat a_i^\dag ,   
-\hat b_i = G{\hat a_i} + g\hat a_s^\dag 
+\hat b_s = G{\hat a_s} + g\hat a_i^\dag ,
+\hat b_i = G{\hat a_i} + g\hat a_s^\dag
 \end{array}
 \end{equation}
 $\hat b_s$ ($\hat b_i$)is output operator of signal(idler) field, $\hat a_s$ ($\hat a_i$)is input operator of signal(idler) field, G and g satisfies the relation $G^2-g^2=1$. They are gain factor of FOPA and are related to pump power and nonlinear coefficient of DSF.
@@ -89,7 +89,8 @@ Ideally the twin beams generated from a FOPA with power gain $G$ and $g$ possess
 {{\left\langle {\Delta {I_s}^2} \right\rangle  + \left\langle {\Delta {I_i}^2} \right\rangle }} = \frac{1}{{({G^2} + {g^2})}}
 \label{eq:R0}
 \end{equation}
-$I_s$ ($I_i$) is the intensity detected in signal (idler) channel. $\Delta{I_s}^2+\Delta{I_i}^2$ defines shot noise limit (SNL). When transmission and detection loss exist in experiment system, $R$ diminishes as the total loss get larger.
+$I_s$ ($I_i$) is the intensity detected in signal (idler) channel. $\Delta{I_s}^2+\Delta{I_i}^2$ defines shot noise limit (SNL). This equation is derived under condition that the mean photon number of injected into FOPA $\alpha^2\gg 1$ 
+When transmission and detection loss exist in experiment system, $R_{meas}$ diminishes as the total loss get larger.
 After series of calculation, when the total quantum efficiency of signal beam is $\eta_s$, the maximal measurable intensity difference squeezing $R_{meas}$ is:
 \begin{equation}
 R_{meas}=R_0(1-\eta_s)+\eta_s
@@ -103,7 +104,7 @@ This relations defines the upper limit of quantum resource left after a certain 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig1_3d_2.jpg}
+    \includegraphics[width=\linewidth]{fig1_3d_2.jpg}
 \caption{Experiment setup.
 PF1-2, programmable optical filter;
 EDFA, erbium-doped fiber amplifier;
@@ -144,9 +145,9 @@ The SNL of BD is calibrated by coherent light at different input power in prior 
 When measuring intensity difference, the signal noise power is compared with SNL at same intensity in realtime, which helps to make the experiment result free from power drifting and fluctuation.
 
 
-The intensity of twin beams generated from FOPA are naturally unbalanced due to the relation $G^2-g^2=1$, were $G^2$ and $g^2$ are signal and idler power gain. 
+The intensity of twin beams generated from FOPA are naturally unbalanced due to the relation $G^2-g^2=1$, were $G^2$ and $g^2$ are signal and idler power gain.
 Besides, transmission loss in different channel and Raman amplification effect, which provide addition gain and noise together in longer wavelength, also make this problem more sophisticated.
-In previous works\cite{guo12}, when the inject wavelength is longer than pump wavelength, the inject signal obtain much more power gain, and thus we had to attenuate the inject signal a lot(>10\%), which is undesirable. 
+In previous works\cite{guo12}, when the inject wavelength is longer than pump wavelength, the inject signal obtain much more power gain, and thus we had to attenuate the inject signal a lot(>10\%), which is undesirable.
 Here we change the inject wavelength to shorter wavelength, the power gain in idler channel is almost identical with signal field, which means we only need to attenuate idler field slightly(1-2\%).
 
 
